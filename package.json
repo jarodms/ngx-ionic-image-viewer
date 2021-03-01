@@ -24,7 +24,7 @@
     "modal",
     "slider"
   ],
-  "homepage": "https://github.com/simongolms/ngx-ionic-image-viewer.git",
+  "homepage": "https://github.com/jarodms/ngx-ionic-image-viewer.git",
   "license": "MIT",
   "author": {
     "name": "Simon Golms",
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/simongolms/ngx-ionic-image-viewer.git"
+    "url": "https://github.com/jarodms/ngx-ionic-image-viewer.git"
   },
   "private": true,
   "dependencies": {

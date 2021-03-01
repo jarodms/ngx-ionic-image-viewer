@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { ModalController, IonSlides } from '@ionic/angular';
+import { Component, OnInit, Input } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'ion-viewer-modal',
@@ -46,7 +47,7 @@ export class ViewerModalComponent implements OnInit {
     startTime: 0,
   };
 
-  @ViewChild('sliderRef', { static: true }) slides: IonSlides;
+  // @ViewChild('sliderRef', { static: true }) slides: IonSlides;
 
   constructor(private modalController: ModalController) {}
 
@@ -62,8 +63,8 @@ export class ViewerModalComponent implements OnInit {
      * See reported bug: https://github.com/ionic-team/ionic/issues/19638#issuecomment-584828315
      * Hint: Comment in '<ion-slide>' in component
      */
-    const swiper = await this.slides.getSwiper();
-    swiper.appendSlide(`<ion-slide><img alt="${this.alt}" src="${this.src}" onerror="this.src='${this.srcFallback}'"/></ion-slide>`);
+    // const swiper = await this.slides.getSwiper();
+    // swiper.appendSlide(`<ion-slide><img alt="${this.alt}" src="${this.src}" onerror="this.src='${this.srcFallback}'"/></ion-slide>`);
   }
 
   setStyle() {
